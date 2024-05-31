@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+    body {
+        text-align: center;
+        background-color: lightgray;
+    }
+    .container {
+        margin: 50px auto;
+        width: 50%;
+        padding: 20px;
+        background-color: gainsboro; 
+        border: 2px solid green; 
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+    }
+    h1 {
+        color: green;
+    }
+    form {
+        margin-top: 20px;
+    }
+    input[type="text"], select {
+        width: 80%; 
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box; 
+    }
+    input[type="submit"] {
+        background-color: green; 
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Fill the form for slot booking</h1>
+    <form action="userController" method="post">
+        <pre>
+Enter Full Name:  <input type="text" name="name"><br>
+Enter RegisterID: <input type="text" name="RegID"><br>
+Enter Email ID:   <input type="text" name="email"><br>
+Enter Phone No:   <input type="text" name="phno">
+        </pre>
+        Select your slot:
+        <select name="slot">
+            <option>5:00 AM</option>
+            <option>6:00 AM</option>
+            <option>7:00 AM</option>
+            <option>5:00 PM</option>
+            <option>6:00 PM</option>
+            <option>7:00 PM</option>
+        </select>
+        <br>
+        <br>
+        <input type="submit" value="SUBMIT">
+    </form>
+</div>
+</body>
+</html>
